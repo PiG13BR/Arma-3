@@ -19,7 +19,7 @@ sleep 0.5;
 	cutText ["Se preparando para o salto...", "BLACK OUT"];
 
 // text with timing
-_teltime = 5; // You can chance this number. "Waiting for the jump (in seconds)".
+private _teltime = 5; // You can chance this number. "Waiting for the jump (in seconds)".
 while { _teltime>0 } do {
 	_teltime = _teltime - 1;
 	titleText [str(_teltime), "PLAIN DOWN", 1];
