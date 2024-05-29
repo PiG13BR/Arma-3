@@ -57,6 +57,6 @@ openMap false;
 
 waitUntil {
 	sleep 1;
-	isTouchingGround leader _group
+	isTouchingGround leader _group;
 	hint "test"; // Ok
 };
