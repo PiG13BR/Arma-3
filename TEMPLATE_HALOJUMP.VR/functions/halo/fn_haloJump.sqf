@@ -16,7 +16,7 @@ sleep 0.5;
 } forEach units _group;
 
 // Some text with black out
-	cutText ["Se preparando para o salto...", "BLACK OUT"];
+cutText ["Se preparando para o salto...", "BLACK OUT"];
 
 // text with timing
 private _teltime = 5; // You can chance this number. "Waiting for the jump (in seconds)".
@@ -32,11 +32,12 @@ while { _teltime>0 } do {
 			_x addBackPack "rhs_d6_Parachute_backpack"
 		}forEach units _group;
 };*/
-if !(unitBackpack _unit isKindof "B_Parachute") then {
-	{
-		_x addBackPack "B_Parachute"
-	}forEach units _group;
-};
+{
+	private _checkUnit = _x;
+	if !(unitBackpack _checkUnit isKindof "B_Parachute") then {
+		_checkUnit addBackPack "B_Parachute"
+	}
+}forEach units _group;
 
 // Restore screen and closes de map (forced)
 {
@@ -52,11 +53,16 @@ openMap false;
 
 // set position and height for the group 
 {
-	_x setPos [PIG_haloPos select 0, PIG_haloPos select 1, _height]
+	_x setPos [(PIG_haloPos select 0) + random(50), (PIG_haloPos select 1) + random(50), _height]
 } forEach units _group;
 
 waitUntil {
 	sleep 1;
-	isTouchingGround leader _group;
+	!alive leader _group || isTouchingGround leader _group
 };
-hint "test"; // Ok
+
+leader _group addAction ["Call Respawn", {
+	params ["_target", "_caller", "_actionId", "_arguments"];
+	private _pos = getPos _caller;
+	[_caller, _pos, _actionId] execVM 'scripts\PIG_dropRespawn.sqf'
+}]
