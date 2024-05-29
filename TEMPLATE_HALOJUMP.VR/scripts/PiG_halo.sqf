@@ -8,7 +8,7 @@
 params["_unit", "_height"];
 
 // Create Global Variable
-clicked = false;
+PIG_clicked = false;
 
 // Open map (forced) and generate some text
 openMap true;
@@ -27,12 +27,12 @@ openMap true;
 	clicked = true;
 }];*/
 
-[ "halo_event", "onMapSingleClick", { halo_pos = _pos; clicked = true; } ] call BIS_fnc_addStackedEventHandler;
+[ "halo_event", "onMapSingleClick", { PIG_haloPos = _pos; PIG_clicked = true; } ] call BIS_fnc_addStackedEventHandler;
 
 // Wait until player click on the map or close the map
 waitUntil {
 	sleep 1;
-	clicked or !(visibleMap)
+	PIG_clicked or !(visibleMap)
 };
 
 // if player close the map before clicking on it, then the jump is cancelled (exit script)
@@ -46,11 +46,11 @@ _group = group _unit;
 
 [ "halo_event", "onMapSingleClick" ] call BIS_fnc_removeStackedEventHandler;
 
-// Remote call for every group member (not working on dedi)
+// Remote call for every group member
 [_unit, _group, _height] remoteExec ["PIG_fnc_haloJump", _group];
 // Test
-_hintOk = "Hello, World!";
-_hintOk remoteExec ["PIG_fnc_test", _group]; // this functions works on dedi
+/*_hintOk = "Hello, World!";
+_hintOk remoteExec ["PIG_fnc_test", _group]; // this functions works on dedi/*
 
 
 /*Moved to functions

@@ -2,7 +2,7 @@ params["_unit", "_group", "_height"];
 playSound "parasound";
 
 // Create marker (visible only for that group using the halo jump)
-createMarkerLocal ["marker_halo", halo_pos];
+createMarkerLocal ["marker_halo", PIG_haloPos];
 "marker_halo" setMarkerTypeLocal "hd_start";
 "marker_halo" setMarkerColorLocal "colorBLUE";
 "marker_halo" setMarkerTextLocal "HALO";
@@ -52,11 +52,11 @@ openMap false;
 
 // set position and height for the group 
 {
-	_x setPos [halo_pos select 0, halo_pos select 1, _height]
+	_x setPos [PIG_haloPos select 0, PIG_haloPos select 1, _height]
 } forEach units _group;
 
 waitUntil {
 	sleep 1;
 	isTouchingGround leader _group;
-	hint "test"; // Ok
 };
+hint "test"; // Ok
