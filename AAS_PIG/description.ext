@@ -1,0 +1,20 @@
+respawnOnStart = -1;
+
+class CfgFunctions
+{
+	class PIG
+	{
+		class markers
+		{
+				class updateAttackMarker {};
+				class updateDefenseMarker{};
+				class defaultOpossiteMarker{};
+				class defaultsideMarker{};
+				class updateMarkersBorder {};
+		};
+		class setup
+		{
+			class initialSetup {};
+		};	
+	};
+};
