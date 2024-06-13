@@ -3,6 +3,7 @@ waitUntil {
 };
 
 PIG_sectors = [sectorA, sectorB, sectorC, sectorD]; // PUT ALL YOUR NAMED SECTORS HERE
+PIG_triggers = [triggerA, triggerB, triggerC, triggerD]; // PUT ALL YOUR NAMED TRIGGERS HERE (those synchronized with area > sector)
 
 // Select the current sectors for each side
 currentWestSectors = [sectorA];
