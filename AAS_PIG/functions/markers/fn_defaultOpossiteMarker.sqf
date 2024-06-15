@@ -6,7 +6,7 @@ Description:
 Restores the default opossite side marker of a sector (type and color)
 
 Parameter(s):
-0: ARRAY - SECTORS MODULE
+0: OBJECT - SECTOR MODULE
 1: SIDE (east, west, independent)
 
 Return:
