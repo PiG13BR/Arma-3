@@ -55,6 +55,9 @@ _markerIcon setMarkerColorLocal "colorRED";
 _markerIcon setMarkerShapeLocal "ICON";
 _markerIcon setMarkerTextLocal "Artillery Fire" + " " + str _nameArty + " " + "(" + str _eta + "s" + ")";
 
+// Don't close the dialog and run the script again
+[] execVM "scripts\arty_menu\getArtySupport.sqf";
+
 // Sleep based on the impact ETA
 sleep (10 + _eta);
 deleteMarkerLocal _markerIcon;
@@ -62,3 +65,4 @@ deleteMarkerLocal _markerBorder;
 
 // (Option) Adds back the artillery to the support list
 // PIG_artillery_support = PIG_artillery_support + [_artySelected];
+
