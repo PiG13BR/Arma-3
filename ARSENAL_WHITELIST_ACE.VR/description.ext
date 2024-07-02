@@ -1,0 +1,23 @@
+respawnOnStart = 0;
+
+class CfgFunctions
+{
+	class PIG 
+	{
+		class actions
+		{
+			class addActionPlayers {};
+		};
+	};
+	class KPLIB
+	{
+		class inventory 
+		{
+			class crawlAllItems {};
+			class checkGear {};
+			class checkWeaponCargo {};
+			class getWeaponComponents {};
+			class isRadio {};
+		}
+	}
+};
