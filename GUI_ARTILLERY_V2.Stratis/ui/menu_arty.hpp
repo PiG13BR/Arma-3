@@ -424,9 +424,9 @@ class PIG_RscArtyMenu
 		class buttonFire: RscButton
 		{
 			idc = 1600;
-			action = "execVM 'scripts\arty_menu\checkParams.sqf'; PIG_fire_button = 1;";
+			action = "[] spawn PIG_fnc_checkParams; PIG_fire_button = 1;";
 
-			text = "Fire"; //--- ToDo: Localize;
+			text = "Fire"; 
 			x = 0.467199 * safezoneW + safezoneX;
 			y = 0.808069 * safezoneH + safezoneY;
 			w = 0.0590415 * safezoneW;
@@ -438,7 +438,7 @@ class PIG_RscArtyMenu
 		{
 			idc = 1001;
 
-			text = "Artillery Menu"; //--- ToDo: Localize;
+			text = "Artillery Menu"; 
 			x = 0.447519 * safezoneW + safezoneX;
 			y = 0.163925 * safezoneH + safezoneY;
 			w = 0.111523 * safezoneW;
@@ -450,7 +450,7 @@ class PIG_RscArtyMenu
 			idc = 1601;
 			action = "closeDialog 0";
 
-			text = "Close"; //--- ToDo: Localize;
+			text = "Close"; 
 			x = 0.231033 * safezoneW + safezoneX;
 			y = 0.836075 * safezoneH + safezoneY;
 			w = 0.0524813 * safezoneW;
@@ -460,7 +460,7 @@ class PIG_RscArtyMenu
 		{
 			idc = 1002;
 
-			text = "Artillery"; //--- ToDo: Localize;
+			text = "Artillery"; 
 			x = 0.290075 * safezoneW + safezoneX;
 			y = 0.233941 * safezoneH + safezoneY;
 			w = 0.0459212 * safezoneW;
@@ -470,7 +470,7 @@ class PIG_RscArtyMenu
 		{
 			idc = 1003;
 
-			text = "Ammunition"; //--- ToDo: Localize;
+			text = "Ammunition"; 
 			x = 0.467199 * safezoneW + safezoneX;
 			y = 0.233941 * safezoneH + safezoneY;
 			w = 0.0656017 * safezoneW;
@@ -480,7 +480,7 @@ class PIG_RscArtyMenu
 		{
 			idc = 1004;
 
-			text = "Rounds"; //--- ToDo: Localize;
+			text = "Rounds"; 
 			x = 0.657444 * safezoneW + safezoneX;
 			y = 0.233941 * safezoneH + safezoneY;
 			w = 0.0459212 * safezoneW;
@@ -509,6 +509,24 @@ class PIG_RscArtyMenu
 			y = 0.27595 * safezoneH + safezoneY;
 			w = 0.144324 * safezoneW;
 			h = 0.0280062 * safezoneH;
+			class ComboScrollBar
+			{
+				color[] = {1,1,1,1};
+				colorActive[] = {1,1,1,1};
+				colorDisabled[] = {1,1,1,0.3};
+				thumb = "\A3\ui_f\data\gui\cfg\scrollbar\thumb_ca.paa";
+				arrowEmpty = "\A3\ui_f\data\gui\cfg\scrollbar\arrowEmpty_ca.paa";
+				arrowFull = "\A3\ui_f\data\gui\cfg\scrollbar\arrowFull_ca.paa";
+				border = "\A3\ui_f\data\gui\cfg\scrollbar\border_ca.paa";
+				shadow = 0;
+				scrollSpeed = 0.06;
+				width = 0;
+				height = 0;
+				autoScrollEnabled = 0;
+				autoScrollSpeed = -1;
+				autoScrollDelay = 5;
+				autoScrollRewind = 0;
+			};
 		};
 	}
 }
