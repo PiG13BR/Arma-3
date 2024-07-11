@@ -1,1 +1,58 @@
+/*
+    ----- Respawn -----
+*/
 
+// Enable or disable the respawn button in the menu for INSTANT and BASE respawn types.
+respawnButton = 1;
+
+// Templates are pre-defined scripts called when player dies and respawns. They are defined in an array and can be combined together.
+// List of pre-defined variants: https://community.bistudio.com/wiki/Arma_3_Respawn#Official_Templates
+respawnTemplates[] = {};
+
+// Additionally, you can define side specific templates. When a side has no unique templates, it will use general respawnTemplates instead.
+// respawnTemplatesWest[] = {"MenuInventory"};
+// respawnTemplatesEast[] = {"Counter"};
+// respawnTemplatesGuer[] = {"Tickets"};
+// respawnTemplatesCiv[] = {"Spectator"};
+// respawnTemplatesVirtual[] = {};
+
+// Type of Respawn (Default 0 in SP, 1 in MP)
+// 0    "NONE"      No respawn
+// 1    "BIRD"      Respawn as a seagull
+// 2    "INSTANT"   Respawn just where you died.
+// 3    "BASE"      Respawn in base. A respawn marker is needed.
+// 4    "GROUP"     Respawn in your group. If there is no remaining AI, you will become a seagull.
+// 5    "SIDE"      Introduced with Armed Assault version 1.08 Respawn into an AI unit on your side (if there's no AI left, you'll become a seagull).
+respawn = 3;
+
+// Set respawn delay in seconds.
+respawndelay = 10;
+
+// Show the scoreboard and respawn countdown timer for a player if he is killed with respawn type BASE.
+respawnDialog = 0;
+
+// Respawn player when he joins the game. Available only for INSTANT and BASE respawn types. (Default: 0)
+// -1 - Dont respawn on start. Don't run respawn script on start.
+//  0 - Dont respawn on start. Run respawn script on start.
+//  1 - Respawn on start. Run respawn script on start.
+respawnOnStart = 0;
+
+#include "ui\defines.hpp"
+#include "ui\menu_respawn.hpp"
+import RscTitle;
+#include "ui\deathScreen.hpp"
+
+class CfgRespawnTemplates {
+
+};
+
+class cfgFunctions
+{
+    class PIG
+    {
+        class respawn
+        {
+            class respawnManager {};
+        }
+    }
+};
