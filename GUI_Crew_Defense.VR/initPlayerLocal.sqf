@@ -1,1 +1,1 @@
-
+player addAction ["Open Menu", {createDialog "PIG_RscCrewWeapons"; execVM "scripts\findStaticWeapons.sqf"}]
