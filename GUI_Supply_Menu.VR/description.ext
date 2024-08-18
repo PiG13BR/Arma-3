@@ -1,0 +1,8 @@
+#include "ui\defines.hpp"
+#include "ui\menu_supplies_main.hpp"
+#include "ui\menu_boxes.hpp"
+#include "ui\menu_confirm_delete.hpp"
+#include "ui\menu_confirm_clear.hpp"
+#include "ui\menu_ammo.hpp"
+#include "ui\menu_items.hpp"
+#include "ui\menu_manage_items.hpp"

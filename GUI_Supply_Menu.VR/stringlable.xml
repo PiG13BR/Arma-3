@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project name="Supply Menu">
+	<Package name="Supply Menu">
+		<Container name="Main Menu">
+			<Key ID="STR_ACTION_SUPPLIES">
+				<Original>Open Supply Menu</Original>
+				<English>Open Supply Menu</English>
+				<Portuguese>Abrir Menu de Suprimentos</Portuguese>
+			</Key>
+			<Key ID="STR_MAIN_TITLE_SUPPLIES">
+				<Original>Supply Menu</Original>
+				<English>Supply Menu</English>
+				<Portuguese>Menu de Suprimento</Portuguese>
+			</Key>
+			<Key ID="STR_MAIN_BOXES">
+				<Original>Boxes</Original>
+				<English>Boxes</English>
+				<Portuguese>Caixas</Portuguese>
+			</Key>
+			<Key ID="STR_MAIN_AMMO">
+				<Original>Ammunition</Original>
+				<English>Ammunition</English>
+				<Portuguese>Munições</Portuguese>
+			</Key>
+			<Key ID="STR_MAIN_ITEMS">
+				<Original>Explosives and items</Original>
+				<English>Explosives and items</English>
+				<Portuguese>Explosivos e Itens</Portuguese>
+			</Key>
+			<Key ID="STR_MAIN_ITEMS">
+				<Original>Manage Items</Original>
+				<English>Manage Items</English>
+				<Portuguese>Gerenciar Itens</Portuguese>
+			</Key>
+			<Key ID="STR_MAIN_MAIN_CLOSE">
+				<Original>Close</Original>
+				<English>Close</English>
+				<Portuguese>Fechar</Portuguese>
+			</Key>
+		</Container>
+		<Container name="Boxes Menu">
+			<Key ID="STR_BOXES_BACK">
+				<Original>Back</Original>
+				<English>Back</English>
+				<Portuguese>Voltar</Portuguese>
+			</Key>
+			<Key ID="STR_BOXES_SPAWN">
+				<Original>Spawn</Original>
+				<English>Spawn</English>
+				<Portuguese>Gerar</Portuguese>
+			</Key>
+			<Key ID="STR_BOXES_DELETE">
+				<Original>Delete Box</Original>
+				<English>Delete Box</English>
+				<Portuguese>Deletar Caixa</Portuguese>
+			</Key>
+			<Key ID="STR_BOXES_CLEAR">
+				<Original>Clear Area</Original>
+				<English>Clear Area</English>
+				<Portuguese>Limpar Área</Portuguese>
+			</Key>
+		</Container>
+		<Container name="Ammo Menu">
+			<Key ID="STR_AMMO_BACK">
+				<Original>Back</Original>
+				<English>Back</English>
+				<Portuguese>Voltar</Portuguese>
+			</Key>
+			<Key ID="STR_AMMO_WEAPONS">
+				<Original>Weapons</Original>
+				<English>Weapons</English>
+				<Portuguese>Armas</Portuguese>
+			</Key>
+			<Key ID="STR_AMMO_AMMUNITION">
+				<Original>Ammunition</Original>
+				<English>Ammunition</English>
+				<Portuguese>Munições</Portuguese>
+			</Key>
+		</Container>
+		<Container name="Items Menu">
+			<Key ID="STR_ITEMS_BACK">
+				<Original>Back</Original>
+				<English>Back</English>
+				<Portuguese>Voltar</Portuguese>
+			</Key>
+			<Key ID="STR_ITEMS_THROWABLE">
+				<Original>Throwables</Original>
+				<English>Throwables</English>
+				<Portuguese>Jogáveis</Portuguese>
+			</Key>
+			<Key ID="STR_ITEMS_EXPLOSIVES">
+				<Original>Explosives</Original>
+				<English>Explosives</English>
+				<Portuguese>Explosivos</Portuguese>
+			</Key>
+			<Key ID="STR_ITEMS_MEDICAL">
+				<Original>Medic Items</Original>
+				<English>Medic Items</English>
+				<Portuguese>Itens Médicos</Portuguese>
+			</Key>
+		</Container>
+		<Container name="Manage Menu">
+			<Key ID="STR_MANAGE_BACK">
+				<Original>Back</Original>
+				<English>Back</English>
+				<Portuguese>Voltar</Portuguese>
+			</Key>
+			<Key ID="STR_MANAGE_TITLE">
+				<Original>Manage Item</Original>
+				<English>Manage Item</English>
+				<Portuguese>Gerenciar Itens</Portuguese>
+			</Key>
+			<Key ID="STR_MANAGE_ALL">
+				<Original>All</Original>
+				<English>All</English>
+				<Portuguese>Todos</Portuguese>
+			</Key>
+			<Key ID="STR_MANAGE_AMMO">
+				<Original>Ammunition</Original>
+				<English>Ammunition</English>
+				<Portuguese>Munição</Portuguese>
+			</Key>
+			<Key ID="STR_MANAGE_THROWABLE">
+				<Original>Throwables</Original>
+				<English>Throwables</English>
+				<Portuguese>Jogáveis</Portuguese>
+			</Key>
+			<Key ID="STR_MANAGE_EXPLOSIVOS">
+				<Original>Explosives</Original>
+				<English>Explosives</English>
+				<Portuguese>Explosivos</Portuguese>
+			</Key>
+			<Key ID="STR_MANAGE_MEDICAL">
+				<Original>Medic Items</Original>
+				<English>Medic Items</English>
+				<Portuguese>Itens Médicos</Portuguese>
+			</Key>
+			<Key ID="STR_MANAGE_DELETE">
+				<Original>Delete Item</Original>
+				<English>Delete Item</English>
+				<Portuguese>Deletar Item</Portuguese>
+			</Key>
+			<Key ID="STR_MANAGE_CLEAR">
+				<Original>Delete All</Original>
+				<English>Delete All</English>
+				<Portuguese>Deletar Tudo</Portuguese>
+			</Key>
+		<Container name="Confirm Menu">
+			<Key ID="STR_CONFIRM_TITLE">
+				<Original>Are you sure?</Original>
+				<English>Are you sure?</English>
+				<Portuguese>Você tem certeza?</Portuguese>
+			</Key>
+			<Key ID="STR_CONFIRM_YES">
+				<Original>Yes</Original>
+				<English>Yes</English>
+				<Portuguese>Sim</Portuguese>
+			</Key>
+			<Key ID="STR_CONFIRM_NO">
+				<Original>No</Original>
+				<English>No</English>
+				<Portuguese>Não</Portuguese>
+			</Key>
+		</Container>
+		<Container name="Supplies functions">
+			<Key ID="STR_NOBOXES_DELETE">
+				<Original>No boxes in the area to delete</Original>
+				<English>No boxes in the area to delete</English>
+				<Portuguese>Não há caixas na área para deletar</Portuguese>
+			</Key>
+			<Key ID="STR_NOBOXES_NEAR">
+				<Original>Couldn't find any box nearby</Original>
+				<English>Couldn't find any box nearby</English>
+				<Portuguese>Não há nenhuma caixa por perto</Portuguese>
+			</Key>
+			<Key ID="STR_BLOCKING_SPAWN">
+				<Original>Something is blocking the spawn area</Original>
+				<English>Something is blocking the spawn area</English>
+				<Portuguese>Algo está bloqueando a geração de uma nova caixa</Portuguese>
+			</Key>
+			<Key ID="STR_SPAWN_BOX_FIRST">
+				<Original>Spawn a box first!</Original>
+				<English>Spawn a box first!</English>
+				<Portuguese>Faça surgir uma caixa primeiro!</Portuguese>
+			</Key>
+			<Key ID="STR_BOX_FULL">
+				<Original>The box is full! Last item added removed</Original>
+				<English>The box is full! Last item added removed</English>
+				<Portuguese>A caixa está cheia! Último item adicionado removido</Portuguese>
+			</Key>
+		</Container>
+	</Package>
+</Project>

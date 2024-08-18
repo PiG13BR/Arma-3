@@ -1,0 +1,12 @@
+// Return a number when you select a item from the list
+_index = lbCurSel 1500;
+_weapon = lbData [1500, _index];
+
+// Get the data stored
+_box = missionNamespace getVariable "spawnedBox";
+// Check if the player spawned a box, if not, exit the script
+if (isNil "_box") exitWith {hint "Spawn a box first!"};
+
+if !(_box distance spawnPos > 2) then {
+_box addWeaponCargoGlobal [_weapon, 1];
+};
