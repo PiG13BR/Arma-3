@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Project name="Air Supremacy">
+	<Package name="Air Supremacy">
+        <Key ID="STR_MISSION_TITLE">
+            <Original>AIR SUPREMACY - PVP (v1.0)</Original>
+        </Key>
+        <Key ID="STR_MISSION_DESCRIPTION">
+            <Original>Choose your plane and fight for air supremacy. Help your team by completing objectives and draining enemy tickets.</Original>
+            <Portuguese>Escolha seu avião e lute por supremacia aérea. Ajude seu time completando objetivos e secando os tickets dos inimigos.</Portuguese>
+        </Key>
+	</Package>
+</Project>
