@@ -3,18 +3,18 @@ Script by PiG13BR
 */
 sleep 1;
 // Define roles classnames
-PIG_officer = "B_officer_F";
-PIG_tleader = "";
-PIG_mg = "";
-PIG_rifleman = "";
-PIG_engineer = "";
-PIG_medic = "";
-PIG_rifleman_LAT = "";
-PIG_rifleman_LAT2 = "";
-PIG_rifleman_HAT = "";
-PIG_rifleman_HAT_assist = "";
-PIG_granadier = "";
-PIG_pilot = "";
+_officer = "B_officer_F";
+_tleader = "";
+_mg = "";
+_rifleman = "";
+_engineer = "";
+_medic = "";
+_rifleman_LAT = "";
+_rifleman_LAT2 = "";
+_rifleman_HAT = "";
+_rifleman_HAT_assist = "";
+_granadier = "";
+_pilot = "";
 
 // Get the class name (must match with one above!!)
 _classRole = typeOf player;
@@ -22,51 +22,51 @@ _classRole = typeOf player;
 sleep 1;
 
 switch (_classRole) do {
-	case PIG_officer : {
+	case _officer : {
 		[] call compileFinal preprocessFileLineNumbers "presets\arsenal\arsenal_presets\roles\officer_role.sqf";
 		playerRoleSelected = true;
 	};
-	case PIG_tleader : {
+	case _tleader : {
 		[] call compileFinal preprocessFileLineNumbers "presets\arsenal\arsenal_presets\roles\tleader_role.sqf";
 		playerRoleSelected = true;
 	};
-	case PIG_mg : {
+	case _mg : {
 		[] call compileFinal preprocessFileLineNumbers "presets\arsenal\arsenal_presets\roles\mg_role.sqf";
 		playerRoleSelected = true;
 	};
-	case PIG_rifleman : {
+	case _rifleman : {
 		[] call compileFinal preprocessFileLineNumbers "presets\arsenal\arsenal_presets\roles\rifleman_role.sqf";
 		playerRoleSelected = true;
 	};
-	case PIG_medic : {
+	case _medic : {
 		[] call compileFinal preprocessFileLineNumbers "presets\arsenal\arsenal_presets\roles\medic_role.sqf";
 		playerRoleSelected = true;
 	};
-	case PIG_engineer : {
+	case _engineer : {
 		[] call compileFinal preprocessFileLineNumbers "presets\arsenal\arsenal_presets\roles\engineer_role.sqf";
 		playerRoleSelected = true;
 	};
-	case PIG_rifleman_LAT : {
+	case _rifleman_LAT : {
 		[] call compileFinal preprocessFileLineNumbers "presets\arsenal\arsenal_presets\roles\lat_role.sqf";
 		playerRoleSelected = true;
 	};
-	case PIG_rifleman_LAT2: {
+	case _rifleman_LAT2: {
 		[] call compileFinal preprocessFileLineNumbers "presets\arsenal\arsenal_presets\roles\lat2_role.sqf";
 		playerRoleSelected = true;
 	};
-	case PIG_rifleman_HAT : {
+	case _rifleman_HAT : {
 		[] call compileFinal preprocessFileLineNumbers "presets\arsenal\arsenal_presets\roles\hat_role.sqf";
 		playerRoleSelected = true;
 	};
-	case PIG_rifleman_HAT_assist : {
+	case _rifleman_HAT_assist : {
 		[] call compileFinal preprocessFileLineNumbers "presets\arsenal\arsenal_presets\roles\rifleman_role.sqf";
 		playerRoleSelected = true;
 	};
-	case PIG_granadier : {
+	case _granadier : {
 		[] call compileFinal preprocessFileLineNumbers "presets\arsenal\arsenal_presets\roles\granadier_role.sqf";
 		playerRoleSelected = true;
 	};
-	case PIG_pilot : {
+	case _pilot : {
 		[] call compileFinal preprocessFileLineNumbers "presets\arsenal\arsenal_presets\roles\pilot_role.sqf";
 		playerRoleSelected = true;
 	};
