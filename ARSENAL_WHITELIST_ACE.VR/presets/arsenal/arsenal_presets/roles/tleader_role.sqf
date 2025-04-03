@@ -8,5 +8,3 @@ PIG_arsenal_items = (PIG_uniforms + PIG_vests + PIG_helmets + PIG_caps + PIG_fac
 PIG_arsenal_backpacks = (PIG_backpacks_radio + PIG_backpacks);
 
 [] call compileFinal preprocessFileLineNumbers "presets\arsenal\init_arsenal.sqf";
-
-clientReady = true;
